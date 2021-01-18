@@ -1,6 +1,4 @@
 import React from "react";
-import { connect } from "react-redux";
-import { compose } from "redux";
 import { firebaseConnect } from "react-redux-firebase";
 
 class Login extends React.Component {
@@ -65,6 +63,13 @@ class Login extends React.Component {
             </button>
           </form>
         </div>
+        <small>
+          Credentials for Login:
+          <p>
+            <b>email</b>: admin@gmail.com; {"  "}
+            <b>password</b>: admins
+          </p>
+        </small>
       </div>
     );
   }

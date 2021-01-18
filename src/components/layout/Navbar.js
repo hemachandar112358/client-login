@@ -13,7 +13,6 @@ class Navbar extends React.Component {
 
   static getDerivedStateFromProps(props, state) {
     const { auth } = props;
-    console.log(auth);
 
     if (auth.uid) {
       return { isAuthenticated: true };
@@ -54,9 +53,9 @@ class Navbar extends React.Component {
             <ul className="navbar-nav ml-auto">
               {isAuthenticated ? (
                 <li className="nav-item">
-                  <a className="nav-link" onClick={this.onLogoutClick}>
+                  <Link className="nav-link" onClick={this.onLogoutClick}>
                     Logout <span className="sr-only">(current)</span>
-                  </a>
+                  </Link>
                 </li>
               ) : null}
             </ul>

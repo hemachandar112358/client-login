@@ -1,10 +1,8 @@
 import locationHelperBuilder from "redux-auth-wrapper/history4/locationHelper";
 import { connectedRouterRedirect } from "redux-auth-wrapper/history4/redirect";
-import createHistory from "history/createBrowserHistory";
 import Loading from "../layout/Loading";
 
 const locationHelper = locationHelperBuilder({});
-const browserHistory = createHistory();
 
 export const UserIsAuthenticated = connectedRouterRedirect({
   wrapperDisplayName: "UserIsAuthenticated",
